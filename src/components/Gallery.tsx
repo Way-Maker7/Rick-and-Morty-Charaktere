@@ -1,5 +1,6 @@
 import  characters from '../characters.json'
 import GalleryItems from "./GalleryItems";
+import "./Gallery.css"
 
 export default function Gallery(){
 
@@ -7,7 +8,7 @@ export default function Gallery(){
     species: c.species, index: c.id}}/>);
 
     return(
-        <div>
+        <div className="Gallery">
             {names}
         </div>
     )

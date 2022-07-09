@@ -1,24 +1,26 @@
 import {Character} from "../model";
+import "./GalleryItems.css";
 
-interface GalleryItemProps{
+interface GalleryItemProps {
     character: Character;
 }
 
-export default function GalleryItems(props: GalleryItemProps){
+export default function GalleryItems(props: GalleryItemProps) {
 
 
+    return (
+        <div className="Card">
+            <h3>Name: {props.character.name}</h3>
 
+            <img src={props.character.imageUrl} alt="img"/>
 
-    return(
-        <div>
-           <img src={props.character.imageUrl}/>
-            <div className= "character-information">
+            <ul>
+                <li>Status: {props.character.status}</li>
+                <li>Species:{props.character.species}</li>
+                <li> Id: {props.character.index}</li>
 
-                <div><span className="name"> Name: </span> {props.character.name}</div>
-                <div><span className="status"> Status: </span> {props.character.status}</div>
-                <div><span className="species"> Species: </span> {props.character.species}</div>
-                <div><span className="index"> Id: </span> {props.character.index}</div>
-            </div>
+            </ul>
+
 
         </div>
     )
