@@ -5,5 +5,6 @@ export interface Character
     imageUrl: string;
     status: string;
     species: string;
+    index: number;
 
 }
