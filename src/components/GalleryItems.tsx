@@ -17,7 +17,7 @@ export default function GalleryItems(props: GalleryItemProps) {
             <ul>
                 <li>Status: {props.character.status}</li>
                 <li>Species:{props.character.species}</li>
-                <li> Id: {props.character.index}</li>
+                {/*<li> Id: {props.character.id}</li>*/}
 
             </ul>
 
